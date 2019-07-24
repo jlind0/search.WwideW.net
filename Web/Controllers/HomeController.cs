@@ -55,10 +55,10 @@ namespace Web.Controllers
         {
             return View(new AddUrl());
         }
-        public async Task<IActionResult> AddUrl(AddUrl url)
-        {
-            await Context.AddAsync(new ShortenedUrl() { Id = Guid.NewGuid(), Raw = url.RawUrl, Short = url.ShortUrl);
-        }
+        //public async Task<IActionResult> AddUrl(AddUrl url)
+        //{
+        //    await Context.AddAsync(new ShortenedUrl() { Id = Guid.NewGuid(), Raw = url.RawUrl, Short = url.ShortUrl);
+        //}
         public IActionResult Privacy()
         {
             return View();
